@@ -23,7 +23,7 @@ export async function POST(req) {
   }
 
   await fetch(
-    "https://hooks.slack.com/services/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",
+    process.env.NEXT_PUBLIC_WEBHOOK_URL,
     {
       method: "POST",
       body: JSON.stringify({
